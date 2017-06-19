@@ -40,7 +40,7 @@ function randomNumber () {
 }
 
 function userInput () {
-	var user = prompt("Rock, paper, scissors, lizard or Spock?");
+	var user = prompt("Rock, paper, scissors, lizard or spock?");
 	return user;
 }
 
@@ -161,7 +161,7 @@ function reset () {
 	if (userScore === 3) {
 		alert('Congratulations, you won! Resetting game.')
 	} else {
-		alert('Unlucky, you losw. Resetting game.')
+		alert('Unlucky, you lost. Resetting game.')
 	}
 
 	userScore = 0;
