@@ -29,23 +29,15 @@ function randomNumber () {
 
 	switch (num) {
 		case 1:
-			return 'rock';
-			break;
+			return 'rock'; break;
 		case 2:
-			return 'paper';
-			break;
-
+			return 'paper'; break;
 		case 3:
-			return 'scissors';
-			break;
-
+			return 'scissors'; break;
 		case 4:
-			return 'lizard';
-			break;
-
+			return 'lizard'; break;
 		case 5:
-			return 'spock';
-			break;
+			return 'spock'; break;
 	}
 }
 
@@ -67,26 +59,16 @@ function score (str) {
 function game(comp, user) {
 	var result = '';
 	switch (comp) {
-
 		case 'rock':
-			result += userRock(user);
-			break;
-
+			result += userRock(user); break;
 		case 'paper':
-			result += userPaper(user);
-			break;
-
+			result += userPaper(user); break;
 		case 'scissors':
-			result += userScissors(user);
-			break;
-
+			result += userScissors(user); break;
 		case 'lizard':
-			result += userLizard(user);
-			break;
-
+			result += userLizard(user); break;
 		case 'spock':
-			result += userSpock(user);
-			break;
+			result += userSpock(user); break;
 	}
 	return result;
 }
@@ -94,26 +76,16 @@ function game(comp, user) {
 function userRock (user) {
 	var result = '';
 	switch (user) {
-
 	 	case 'rock':
-	 		result += draw;
-			break;
-
+	 		result += draw; break;
 		case 'paper':
-	 		result += win;
-	 		break;
-
+	 		result += win; break;
 		case 'scissors':
-	 		result += lose;
-	 		break;
-
+	 		result += lose; break;
 	 	case 'lizard':
-	 		result += win;
-	 		break;
-
+	 		result += win; break;
 	 	case 'spock':
-	 		result += lose;
-	 		break;
+	 		result += lose; break;
  	}
  	return result;
 }
@@ -121,26 +93,16 @@ function userRock (user) {
 function userPaper (user) {
 	var result = '';
 	switch (user) {
-
 	 	case 'rock':
-	 		result += lose;
-			break;
-
+	 		result += lose; break;
 	 	case 'paper':
-	 		result += draw;
-			break;
-
+	 		result += draw; break;
 	 	case 'scissors':
-			result += win;
-			break;
-
+			result += win; break;
 		case 'lizard':
-	 		result += lose;
-	 		break;
-
+	 		result += lose; break;
 	 	case 'spock':
-	 		result += win;
-	 		break;
+	 		result += win; break;
  	}
  	return result;
 }
@@ -148,26 +110,16 @@ function userPaper (user) {
 function userScissors (user) {
 	var result = '';
 	switch (user) {
-
 	 	case 'rock':
-	 		result += win;
-			break;
-
+	 		result += win; break;
 	 	case 'paper':
-	 		result += lose;
-			break;
-
+	 		result += lose; break;
 	 	case 'scissors':
-	 		result += draw;
-			break;
-
+	 		result += draw; break;
 		case 'lizard':
-	 		result += win;
-	 		break;
-
+	 		result += win; break;
 	 	case 'spock':
-	 		result += lose;
-	 		break;
+	 		result += lose; break;
  	}
  	return result;
 }
@@ -175,26 +127,16 @@ function userScissors (user) {
 function userLizard (user) {
 	var result = '';
 	switch (user) {
-
 	 	case 'rock':
-	 		result += lose;
-			break;
-
+	 		result += lose; break;
 	 	case 'paper':
-	 		result += win;
-			break;
-
+	 		result += win; break;
 	 	case 'scissors':
-	 		result += lose;
-			break;
-
+	 		result += lose; break;
 		case 'lizard':
-	 		result += draw;
-	 		break;
-
+	 		result += draw; break;
 	 	case 'spock':
-	 		result += win;
-	 		break;
+	 		result += win; break;
  	}
  	return result;
 }
@@ -202,26 +144,16 @@ function userLizard (user) {
 function userSpock (user) {
 	var result = '';
 	switch (user) {
-
 	 	case 'rock':
-	 		result += win;
-			break;
-
+	 		result += win; break;
 	 	case 'paper':
-	 		result += lose;
-			break;
-
+	 		result += lose; break;
 	 	case 'scissors':
-	 		result += win;
-			break;
-
+	 		result += win; break;
 		case 'lizard':
-	 		result += lose;
-	 		break;
-
+	 		result += lose; break;
 	 	case 'spock':
-	 		result += draw;
-	 		break;
+	 		result += draw; break;
  	}
  	return result;
 }
