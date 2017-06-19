@@ -8,8 +8,7 @@ var draw = 'It\'s a draw!';
 run();
 
 function run () {
-	
-	
+
 	while(Math.max(userScore, compScore) < 3) {
 		var comp = randomNumber();
 		var user = userInput();
@@ -19,7 +18,6 @@ function run () {
 		alert('Computer chose ' + comp + '\n' + result + scores);
 	}
 	reset();
-	
 }
 
 function randomNumber () {
